@@ -58,6 +58,8 @@ PAGE_URL = '{slug}/'
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['tag_cloud']
 
+STATIC_PATHS = ['js', 'css', 'images']
+
 TAG_CLOUD_STEPS = 50
 TAG_CLOUD_MAX_ITEMS = 20
 TAG_CLOUD_SORTING = 'size'
@@ -91,6 +93,8 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 # Social widget
 SOCIAL = (('GitHub', 'https://github.com/benlindsay'),
           ('LinkedIn', 'https://www.linkedin.com/in/benjlindsay'),)
+
+DISQUS_SITENAME = 'benlindsay'
 
 DEFAULT_PAGINATION = 10
 

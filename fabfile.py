@@ -10,20 +10,6 @@ from pelican.server import ComplexHTTPRequestHandler
 
 from datetime import datetime
 
-TEMPLATE = """
-{title}
-{hashes}
-
-:date: {year}-{month}-{day} {hour}:{minute:02d}
-:tags:
-:category:
-:slug: {slug}
-:summary:
-:status: draft
-
-
-"""
-
 
 # Local path configuration (can be absolute or relative to fabfile)
 env.deploy_path = 'output'
@@ -136,12 +122,23 @@ def live_build(port=8000):
     server.watch('*.css')
     server.serve(liveport=35729, port=port)
 
+TEMPLATE = """
+{title}
+{hashes}
 
+:date: {year}-{month}-{day} {hour}:{minute:02d}
+:tags:
+:category:
+:slug: {slug}
+:summary:
+:status: draft
+
+"""
 
 def new_article(title, f_dir='content'):
     today = datetime.today()
     slug = title.lower().strip().replace(' ', '-')
-    f_name = "{}_{:0>2}_{:0>2}_{}.rst".format(
+    f_name = "{}-{:0>2}-{:0>2}-{}.rst".format(
         today.year, today.month, today.day, slug)
     f_path = join(f_dir, f_name)
     t = TEMPLATE.strip().format(title=title,

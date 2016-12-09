@@ -7,6 +7,30 @@
 
 */
 
+/* Stuff Ben Lindsay added */
+
+span, p code {
+    color: #333333;
+}
+
+span.hll {
+    background-color: inherit;
+    font-weight: bold;
+}
+
+.smallspacer {
+    height: 10px;
+}
+
+.spacer {
+    height: 20px;
+}
+
+.bigspacer {
+    height: 50px;
+}
+
+/* end Ben Lindsay section */
 
 /* Code Highlighting */
 code,
