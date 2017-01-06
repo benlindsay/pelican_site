@@ -58,7 +58,7 @@ PAGE_URL = '{slug}/'
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['tag_cloud']
 
-STATIC_PATHS = ['js', 'css', 'images']
+STATIC_PATHS = ['js', 'css', 'images', 'CNAME']
 
 TAG_CLOUD_STEPS = 50
 TAG_CLOUD_MAX_ITEMS = 20
@@ -97,6 +97,9 @@ SOCIAL = (('GitHub', 'https://github.com/benlindsay'),
 DISQUS_SITENAME = 'benlindsay'
 
 DEFAULT_PAGINATION = 10
+
+GOOGLE_ANALYTICS_ID = 'UA-71898636-1'
+GOOGLE_ANALYTICS_SITENAME = 'auto'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

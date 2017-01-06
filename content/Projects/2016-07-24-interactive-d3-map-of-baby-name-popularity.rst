@@ -83,14 +83,17 @@ The gender neutral names make the most interesting visualizations, so I looked t
 Casey, the most popular one, is interesting because of how clean the male/female split was at some points. Here's what it looked like in 1980:
 
 .. image:: /images/Casey_1980.png
+    :alt: Casey in 1980
 
 Another interesting one was Jaime. Here's the map for Jaime in 1975:
 
 .. image:: /images/Jaime_1975.png
+    :alt: Jaime in 1975
 
 Just one year later, when `The Bionic Woman`_ aired on TV, everyone must have loved Jaime, the female cyborg spy because suddenly Jaime's popularity among babies skyrocketed. Here's the map for 1976:
 
 .. image:: /images/Jaime_1976.png
+    :alt: Jaime in 1976
 
 .. _`The Bionic Woman`: http://www.imdb.com/title/tt0073965/
 
