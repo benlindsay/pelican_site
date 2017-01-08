@@ -91,8 +91,8 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('GitHub', 'https://github.com/benlindsay'),
-          ('LinkedIn', 'https://www.linkedin.com/in/benjlindsay'),)
+# SOCIAL = (('GitHub', 'https://github.com/benlindsay'),
+#           ('LinkedIn', 'https://www.linkedin.com/in/benjlindsay'),)
 
 DISQUS_SITENAME = 'benlindsay'
 

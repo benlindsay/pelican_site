@@ -28,22 +28,41 @@
 <!-- </ul> -->
 <!-- {% endif %} -->
 
+<div class="smallspacer"></div>
+<section id="sidebar-icons">
+  <span class="fa-stack fa-lg">
+    <a href="mailto:benjlindsay@gmail.com">
+      <i class="fa fa-envelope-square fa-stack-2x"></i>
+    </a>
+  </span>
+  <span class="fa-stack fa-lg">
+    <a href="https://www.linkedin.com/in/benjlindsay">
+      <i class="fa fa-linkedin-square fa-stack-2x"></i>
+    </a>
+  </span>
+  <span class="fa-stack fa-lg">
+    <a href="https://github.com/benlindsay">
+      <i class="fa fa-github-square fa-stack-2x"></i>
+    </a>
+  </span>
+  <!-- <span class="fa-stack fa-lg"> -->
+  <!--   <a href="https://bitbucket.org/benlindsay"> -->
+  <!--     <i class="fa fa-bitbucket-square fa-stack-2x"></i> -->
+  <!--   </a> -->
+  <!-- </span> -->
+</section>
 
 <h4>Tags</h4>
 {% if tags %}
-	<ul class="blank">
-	{% for tag in tag_cloud %}
-	    <li class="tag-{{ tag.1 }}">
-              <a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0|e }}</a>
-              {% if TAG_CLOUD_BADGE %}
-                ({{ tag.2 }})
-                <!-- <span class="badge">{{ tag.2 }}</span> -->
-              {% endif %}
-            </li>
-	{% endfor %}
+  <ul class="blank">
+  {% for tag in tag_cloud %}
+    <li class="tag-{{ tag.1 }}">
+      <a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0|e }}</a>
+      {% if TAG_CLOUD_BADGE %}({{ tag.2 }}){% endif %}
+    </li>
+  {% endfor %}
 </ul>
 {% endif %}
-
 
 {% if SOCIAL %}
 <nav class="widget">

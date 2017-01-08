@@ -9,6 +9,8 @@
 
 /* Stuff Ben Lindsay added */
 
+@import 'font-awesome/css/font-awesome.css';
+
 span, p code {
     color: #333333;
 }
@@ -28,6 +30,22 @@ span.hll {
 
 .bigspacer {
     height: 50px;
+}
+
+#sidebar-icons {
+    /* text-align: center; */
+    white-space: nowrap;
+    font-size: 1.1em;
+}
+
+#sidebar-icons a, #sidebar-icons span {
+    color: #444444;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#sidebar-icons a:hover {
+    color: #3498DB;
 }
 
 /* end Ben Lindsay section */
