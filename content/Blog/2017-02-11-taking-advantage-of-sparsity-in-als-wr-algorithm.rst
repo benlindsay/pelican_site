@@ -1,5 +1,5 @@
-Taking Advantage of Sparsity in ALS-WR Algorithm
-################################################
+Taking Advantage of Sparsity in the ALS-WR Algorithm
+####################################################
 
 :date: 2017-2-11 23:25
 :tags: als-wr, python, machine learning, recommender systems
