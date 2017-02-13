@@ -31,7 +31,7 @@ PAGE_SAVE_AS = '{slug}/index.html'
 PAGE_URL = '{slug}/'
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['tag_cloud']
+PLUGINS = ['tag_cloud', 'render_math']
 
 STATIC_PATHS = ['js', 'css', 'images', 'CNAME']
 
