@@ -7,31 +7,6 @@ SITENAME = u'Ben Lindsay'
 OUTPUT_PATH = 'output/'
 SITEURL = ''
 
-# Settings in http://simblestudios.com/blog/development/pages-as-pelican-top-level.html
-
-# # put articles (posts) in blog/
-# ARTICLE_URL = 'blog/{slug}.html'
-# ARTICLE_SAVE_AS = 'blog/{slug}.html'
-# # we need to change the main index page now though...
-# INDEX_SAVE_AS = 'blog/index.html'
-# INDEX_URL = 'blog/'
-# #now move all the category and tag stuff to that blog/ dir as well
-# CATEGORY_URL = 'blog/category/{slug}.html'
-# CATEGORY_SAVE_AS = 'blog/category/{slug}.html'
-# CATEGORIES_URL = 'blog/category/'
-# CATEGORIES_SAVE_AS = 'blog/category/index.html'
-# TAG_URL = 'blog/tag/{slug}.html'
-# TAG_SAVE_AS = 'blog/tag/{slug}.html'
-# TAGS_URL = 'blog/tag/'
-# TAGS_SAVE_AS = 'blog/tag/index.html'
-# ARCHIVES_SAVE_AS = 'blog/archives/archives.html'
-# ARCHIVES_URL = 'blog/archives/archives.html'
-# AUTHOR_SAVE_AS = 'blog/{slug}.html'
-# AUTHORS_SAVE_AS = 'blog/authors.html'
-# # put pages in the root directory
-# PAGE_SAVE_AS = '{slug}.html'
-# PAGE_URL = '{slug}.html'
-
 # put articles (posts) in blog/
 ARTICLE_URL = '{category}/{slug}/'
 ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
@@ -90,16 +65,9 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
          ('You can modify those links in your config file', '#'),)
 
-# Social widget
-# SOCIAL = (('GitHub', 'https://github.com/benlindsay'),
-#           ('LinkedIn', 'https://www.linkedin.com/in/benjlindsay'),)
-
 DISQUS_SITENAME = 'benlindsay'
 
 DEFAULT_PAGINATION = 10
 
 GOOGLE_ANALYTICS_ID = 'UA-71898636-1'
 GOOGLE_ANALYTICS_SITENAME = 'auto'
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
