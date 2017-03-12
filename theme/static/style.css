@@ -48,6 +48,8 @@ span.hll {
     color: #3498DB;
 }
 
+svg#pdsg-logo:hover .a { fill: #3498DB; }
+
 /* end Ben Lindsay section */
 
 /* Code Highlighting */
