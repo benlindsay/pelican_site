@@ -23,7 +23,7 @@ I'll demonstrate the benefits of Dask and some of its syntax by running a calcul
 Baseline Prediction Method
 ==========================
 
-The baseline prediction method I'll show below is one of 4 methods discussed in `this excellent survey of collaborative filtering recommender systems`_ by Michael Ekstrand1, John Riedl, and Joseph Konstan. The methods are:
+The baseline prediction method I'll show below is one of 4 methods discussed in `this excellent survey of collaborative filtering recommender systems`_ by Michael Ekstrand, John Riedl, and Joseph Konstan. The methods are:
 
 1. Predict by user's average rating
 2. Predict by item's average rating ("items" are businesses in this case)
@@ -32,7 +32,7 @@ The baseline prediction method I'll show below is one of 4 methods discussed in 
 
 .. _`this excellent survey of collaborative filtering recommender systems`: http://files.grouplens.org/papers/FnT%20CF%20Recsys%20Survey.pdf
 
-The 4th method ended up giving the best predictions on both the Champaign data and US/Canada training set. The damping factors make it a sort of Bayesian method that pushes the prediction closer to the average for users or businesses with fewer ratings. The necessary equations are 2.1, 2.4, and 2.5 in the survey linked above.
+The 4th method ended up giving the best predictions on both the Champaign data and US/Canada training set. The damping factors reduce the weight placed on users or items with few reviews, making the prediction more robust. The necessary equations are 2.1, 2.4, and 2.5 in the survey linked above.
 
 Equation 2.1 (:math:`b_{u,i} = \mu + b_u + b_i`) essentially says that if we want the baseline prediction for user :math:`u`'s rating of item :math:`i`, we can sum up the total average :math:`\mu`, the offset from the :math:`\mu`  corresponding to user :math:`u` (:math:`b_u`), and the offset from :math:`\mu + b_u` corresponding to item :math:`i` (:math:`b_i`).
 
